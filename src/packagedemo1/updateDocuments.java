@@ -22,7 +22,7 @@ public class updateDocuments {
 	      MongoCollection<Document> collection = database.getCollection("sampleCollection");
 	      System.out.println("Collection myCollection selected successfully"); 
 	      
-	      collection.updateOne(Filters.eq("title", 1), Updates.set("likes", 150));       
+	      collection.updateOne(Filters.eq("title", "Neo4j"), Updates.set("likes", 150));       
 	      System.out.println("Document update successfully...");  
 	      
 	      // Retrieving the documents after updation 
